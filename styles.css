@@ -1,0 +1,226 @@
+/* =========================
+   DASAR WEBSITE
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #1ce692;
+    color: #0df581;
+    line-height: 1.6;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #222;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.navbar nav a:hover {
+    color: #777;
+}
+    
+/* =========================
+   HERO / HOME
+========================= */
+.hero {
+    min-height: 75vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 8%;
+    gap: 30px;
+}
+
+.hero-text {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-item: center;
+}
+
+.small-title {
+    font-size: clamp(12px, 2vw, 16px);
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    font-size: clamp(36px, 8vw, 80px);
+    letter-spacing: clamp(2px, 1.5vw, 8px);
+    line-height: 1.1px;
+    margin-bottom: 20px;   
+}
+
+.hero-text > p:not(.small-title) {
+    font-size: clamp(16px, 2.5vw, 20px);
+    max-widht: 600px;
+    margin: 0 auto;
+}
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 28px;
+    background-color: lightblue;
+    color: greenyellow;
+    text-decoration: none;
+    border-radius: 4px; 
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    max-width: 300px;
+    width: 100%;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 25px;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+/* =========================
+   FOKUS KAMI
+========================= */
+.focus {
+    padding: 80px 8%;
+    background-color: rgb(43, 219, 152);
+}
+
+.focus h2,
+.about h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.focus-container {
+    display: flex;
+    gap: 30px;
+}
+
+.card {
+    flex: 1;
+    padding: 30px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   ABOUT
+========================= */
+.about {
+    padding: 80px 8%;
+}
+
+.about p {
+    max-width: 800px;
+    font-size: 18px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    padding: 40px 8%;
+    background-color: #7af19e;
+    color: white;
+    text-align: center;
+}
+
+footer h3 {
+    margin-bottom: 15px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .focus-container {
+        flex-direction: column;
+    }
+}
